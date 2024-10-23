@@ -1,7 +1,9 @@
 name: flutter_axiom
-description: A Very Good Project created by Very Good CLI.
 version: 0.1.0+1
-publish_to: none
+description: A Flutter package that sends logs to Axiom for easy debugging and monitoring.
+issue_tracker: https://github.com/Avila-Tek/flutter_axiom/issues
+homepage: https://github.com/Avila-Tek/flutter_axiom
+documentation: https://github.com/Avila-Tek/flutter_axiom
 
 environment:
   sdk: ^3.5.0
