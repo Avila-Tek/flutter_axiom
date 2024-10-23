@@ -13,6 +13,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.6
+  http: ^0.13.6
   repository: ^3.0.0
 
 dev_dependencies:

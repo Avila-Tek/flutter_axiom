@@ -1,7 +1,8 @@
 import 'dart:convert';
-import 'dart:isolate';
-import 'package:http/http.dart' as http;
 import 'dart:developer' as developer;
+import 'dart:isolate';
+
+import 'package:http/http.dart' as http;
 
 /// {@template flutter_axiom}
 /// A Very Good Project created by Very Good CLI.
@@ -81,7 +82,7 @@ class FlutterAxiomLogs {
     try {
       // Create an isolate to call the future function
       final receivePort = ReceivePort();
-      final isolate = await Isolate.spawn<void>(
+      final isolate = await Isolate.spawn<dynamic>(
         (_) async {
           await _log([
             {
@@ -95,7 +96,7 @@ class FlutterAxiomLogs {
       );
 
       // Receive the result from the isolate
-      final result = await receivePort.first;
+      await receivePort.first;
       // Close the receive port and isolate
       receivePort.close();
       isolate.kill();
