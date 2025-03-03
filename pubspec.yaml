@@ -12,7 +12,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.1.6
+  flutter_bloc: ">=8.1.6 <10.0.0"
   http: ^0.13.6
   repository: ^3.0.0
 
